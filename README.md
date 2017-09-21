@@ -36,14 +36,14 @@ sudo apt-get -y install apt-transport-https
 And add the following content to ```/etc/apt/sources.list.d/atom.list```
 
 ```
-deb https://dl.bintray.com/alanfranz/atom-apt stable main
+echo "deb https://dl.bintray.com/alanfranz/atom-apt stable main" | sudo tee /etc/apt/sources.list.d/atom.list
 ```
 
 Then perform the usual
 
 ```
-apt-get update
-apt-get install atom
+sudo apt-get update
+sudo apt-get install atom
 ```
 
 ## YUM for Centos/RHEL and Fedora
